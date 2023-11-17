@@ -1,0 +1,1546 @@
+{
+  "products": [
+    {
+      "cod": "200",
+      "name": "RODO PUXA E SECA 30CM",
+      "unid": "CX",
+      "qt": "12",
+      "st": "0",
+      "tipoProduto": "1",
+      "sf_st": "0",
+      "id": 1,
+      "materiaisProduto": [
+        {
+          "id": 5,
+          "name": "BOBINA PARA SACO DE LIXO",
+          "preco": 8.1,
+          "frete": 7,
+          "icms": 18,
+          "nf": 100,
+          "tipoFornecedor": "1",
+          "total": 8.667,
+          "unid": "KG",
+          "totalItemMaterial": 8.667,
+          "qt": "1",
+          "obs": "TESTE",
+          "uuid": "588b45a3-8911-4780-806e-65011255b5d1"
+        }
+      ],
+      "operacoesProduto": [
+        {
+          "id": 7,
+          "name": "TUFAGEM ESCOVA LAVA COSTA",
+          "valor": 6,
+          "unid": "DZ",
+          "tipoOperation": "1",
+          "totalItemOperation": 6,
+          "qt": "1",
+          "obs": "TESTE",
+          "cav": "",
+          "ciclo": "",
+          "uuid": "4770d890-ef75-4422-ac35-e1085826a8a3"
+        }
+      ],
+      "totalOperations": 6,
+      "totalMaterials": 8.667,
+      "markUpProduct": {
+        "id": 1,
+        "name": "SEM SUBSTITUIÇÃO TRIBUTÁRIA",
+        "impostos": "13",
+        "comissao": "8.7",
+        "adm": "6",
+        "frete": "8",
+        "financeiro": "4",
+        "promotores": "2",
+        "marketing": "2",
+        "bonificacoes": "2",
+        "lucro": "15",
+        "coeficiente": 2.544529262086514
+      },
+      "infoProduct": {
+        "id": 92,
+        "cod": 200,
+        "name": "RODO DUPLO 30 MAD. (Pregado)",
+        "tabela": 13.01,
+        "precoMedio": 11.85
+      },
+      "totalCost": 14.667,
+      "unitCost": 1.22225,
+      "priceList": "",
+      "mediumPrice": ""
+    },
+    {
+      "cod": "160",
+      "name": "VASSOURA BELLINHA",
+      "unid": "CX",
+      "qt": "12",
+      "st": "0",
+      "tipoProduto": "1",
+      "sf_st": "0",
+      "id": 2,
+      "materiaisProduto": [
+        {
+          "id": 1,
+          "name": "BACIA PLÁSTICA 12 L ",
+          "preco": 4.57,
+          "frete": 5,
+          "icms": 18,
+          "nf": 100,
+          "tipoFornecedor": "0",
+          "total": 3.9759,
+          "unid": "UN",
+          "totalItemMaterial": 3.9759,
+          "qt": "1",
+          "obs": "",
+          "uuid": "dca9c6df-2260-45f2-8016-4bcca2f87f1b"
+        }
+      ],
+      "operacoesProduto": [
+        {
+          "id": 2,
+          "name": "EMBALAGEM",
+          "valor": 44,
+          "unid": "HR",
+          "tipoOperation": "1",
+          "totalItemOperation": 44,
+          "qt": "1",
+          "obs": "",
+          "cav": "",
+          "ciclo": "",
+          "uuid": "dd43575d-15d0-4176-b181-b0eec92ac5e4"
+        }
+      ],
+      "totalOperations": 44,
+      "totalMaterials": 3.9759,
+      "markUpProduct": {
+        "id": 1,
+        "name": "SEM SUBSTITUIÇÃO TRIBUTÁRIA",
+        "impostos": "13",
+        "comissao": "8.7",
+        "adm": "6",
+        "frete": "8",
+        "financeiro": "4",
+        "promotores": "2",
+        "marketing": "2",
+        "bonificacoes": "2",
+        "lucro": "15",
+        "coeficiente": 2.544529262086514
+      },
+      "infoProduct": {
+        "id": 113,
+        "cod": 160,
+        "name": "VAS. BELLINHA PLAST.",
+        "tabela": 11.7,
+        "precoMedio": 9.74
+      },
+      "totalCost": 47.9759,
+      "unitCost": 3.997991666666667,
+      "priceList": "",
+      "mediumPrice": ""
+    },
+    {
+      "cod": "276",
+      "name": "RODO PUXA E SECA 40CM",
+      "unid": "CX",
+      "qt": "12",
+      "st": "0",
+      "tipoProduto": "1",
+      "sf_st": "0",
+      "id": 3,
+      "materiaisProduto": [
+        {
+          "id": 1,
+          "name": "BACIA PLÁSTICA 12 L ",
+          "preco": 4.57,
+          "frete": 5,
+          "icms": 18,
+          "nf": 100,
+          "tipoFornecedor": "0",
+          "total": 3.9759,
+          "unid": "UN",
+          "totalItemMaterial": 3.9759,
+          "qt": "1",
+          "obs": "",
+          "uuid": "dbea9a8b-b619-450c-997d-429457c922f7"
+        }
+      ],
+      "operacoesProduto": [
+        {
+          "id": 6,
+          "name": "TUFAGEM ESCOVA SANITÁRIA",
+          "valor": 6.6,
+          "unid": "DZ",
+          "tipoOperation": "1",
+          "totalItemOperation": 6.6,
+          "qt": "1",
+          "obs": "",
+          "cav": "",
+          "ciclo": "",
+          "uuid": "21e582ee-0962-4242-b562-1ef561e275df"
+        }
+      ],
+      "totalOperations": 6.6,
+      "totalMaterials": 3.9759,
+      "markUpProduct": {
+        "id": 1,
+        "name": "SEM SUBSTITUIÇÃO TRIBUTÁRIA",
+        "impostos": "13",
+        "comissao": "8.7",
+        "adm": "6",
+        "frete": "8",
+        "financeiro": "4",
+        "promotores": "2",
+        "marketing": "2",
+        "bonificacoes": "2",
+        "lucro": "15",
+        "coeficiente": 2.544529262086514
+      },
+      "infoProduct": {
+        "id": 98,
+        "cod": 276,
+        "name": "RODO PUXA E SECA 40 PLAST.",
+        "tabela": 15.8,
+        "precoMedio": 13.8
+      },
+      "totalCost": 10.5759,
+      "unitCost": 0.881325,
+      "priceList": "",
+      "mediumPrice": ""
+    },
+    {
+      "cod": "275",
+      "name": "RODO PUXA E SECA 30CM",
+      "unid": "CX",
+      "qt": "12",
+      "st": "0",
+      "tipoProduto": "1",
+      "sf_st": "0",
+      "id": 4,
+      "materiaisProduto": [
+        {
+          "id": 1,
+          "name": "BACIA PLÁSTICA 12 L ",
+          "preco": 4.57,
+          "frete": 5,
+          "icms": 18,
+          "nf": 100,
+          "tipoFornecedor": "0",
+          "total": 3.9759,
+          "unid": "UN",
+          "totalItemMaterial": 3.9759,
+          "qt": "1",
+          "obs": "TESTE",
+          "uuid": "15a14201-7912-4016-aa03-c4f5ccada545"
+        }
+      ],
+      "operacoesProduto": [
+        {
+          "id": 3,
+          "name": "COLAGEM DE ESPUMA",
+          "valor": 44,
+          "unid": "HR",
+          "tipoOperation": "1",
+          "totalItemOperation": 44,
+          "qt": "1",
+          "obs": "TESTE",
+          "cav": "",
+          "ciclo": "",
+          "uuid": "83630756-cbb7-4f23-a06b-b91e3b32439d"
+        }
+      ],
+      "totalOperations": 44,
+      "totalMaterials": 3.9759,
+      "markUpProduct": {
+        "id": 1,
+        "name": "SEM SUBSTITUIÇÃO TRIBUTÁRIA",
+        "impostos": "13",
+        "comissao": "8.7",
+        "adm": "6",
+        "frete": "8",
+        "financeiro": "4",
+        "promotores": "2",
+        "marketing": "2",
+        "bonificacoes": "2",
+        "lucro": "15",
+        "coeficiente": 2.544529262086514
+      },
+      "infoProduct": {
+        "id": 97,
+        "cod": 275,
+        "name": "RODO PUXA E SECA 30 PLAST.",
+        "tabela": 14.35,
+        "precoMedio": 12.5
+      },
+      "totalCost": 47.9759,
+      "unitCost": 3.997991666666667,
+      "priceList": "",
+      "mediumPrice": ""
+    }
+  ],
+  "materialsList": [
+    {
+      "id": 1,
+      "name": "BACIA PLÁSTICA 12 L ",
+      "preco": 4.57,
+      "frete": 5,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 3.9759,
+      "unid": "UN"
+    },
+    {
+      "id": 2,
+      "name": "BACIA PLÁSTICA 32 L",
+      "preco": 10.7,
+      "frete": 5,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 9.309,
+      "unid": "UN"
+    },
+    {
+      "id": 3,
+      "name": "BALDE PLÁSTICO 15 L",
+      "preco": 5.15,
+      "frete": 5,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 4.480500000000001,
+      "unid": "UN"
+    },
+    {
+      "id": 4,
+      "name": "BALDE PLÁSTICO 8 L",
+      "preco": 4,
+      "frete": 5,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 3.4800000000000004,
+      "unid": "UN"
+    },
+    {
+      "id": 5,
+      "name": "BOBINA PARA SACO DE LIXO",
+      "preco": 8.1,
+      "frete": 7,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "1",
+      "total": 8.667,
+      "unid": "KG"
+    },
+    {
+      "id": 6,
+      "name": "BORRACHA EVA P/ RODO - DUPLO MAD 30CM",
+      "preco": 0.32,
+      "frete": 10,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 0.2944,
+      "unid": "UN"
+    },
+    {
+      "id": 7,
+      "name": "BORRACHA EVA P/ RODO - DUPLO MAD 40CM",
+      "preco": 0.43,
+      "frete": 10,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 0.3956,
+      "unid": "UN"
+    },
+    {
+      "id": 8,
+      "name": "BORRACHA EVA P/ RODO - DUPLO MAD 60CM",
+      "preco": 0.64,
+      "frete": 10,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 0.5888,
+      "unid": "UN"
+    },
+    {
+      "id": 9,
+      "name": "BORRACHA EVA P/ RODO - PUXE E SEK 30CM",
+      "preco": 1.07,
+      "frete": 10,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 0.9844,
+      "unid": "UN"
+    },
+    {
+      "id": 10,
+      "name": "BORRACHA EVA P/ RODO - PUXE E SEK 40CM",
+      "preco": 1.288,
+      "frete": 10,
+      "icms": 18,
+      "nf": 100,
+      "tipoFornecedor": "0",
+      "total": 1.18496,
+      "unid": "UN"
+    }
+  ],
+  "operationsList": [
+    {
+      "id": 1,
+      "name": "MONTAGEM",
+      "valor": 44,
+      "unid": "HR",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 2,
+      "name": "EMBALAGEM",
+      "valor": 44,
+      "unid": "HR",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 3,
+      "name": "COLAGEM DE ESPUMA",
+      "valor": 44,
+      "unid": "HR",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 4,
+      "name": "INJETORA",
+      "valor": 100,
+      "unid": "HR",
+      "tipoOperation": "0"
+    },
+    {
+      "id": 5,
+      "name": "TUFAGEM SIMPLES - BELLINHA E ETC",
+      "valor": 5,
+      "unid": "DZ",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 6,
+      "name": "TUFAGEM ESCOVA SANITÁRIA",
+      "valor": 6.6,
+      "unid": "DZ",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 7,
+      "name": "TUFAGEM ESCOVA LAVA COSTA",
+      "valor": 6,
+      "unid": "DZ",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 8,
+      "name": "TUFAGEM BRUXINHA",
+      "valor": 4.4,
+      "unid": "DZ",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 9,
+      "name": "TUFAGEM ESCOVA OVAL",
+      "valor": 3.9,
+      "unid": "DZ",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 10,
+      "name": "TUFAGEM SUPERBELLA",
+      "valor": 6.6,
+      "unid": "DZ",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 11,
+      "name": "TUFAGEM PELO BOLA",
+      "valor": 38.5,
+      "unid": "DZ",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 12,
+      "name": "PINTURA DE PÁ",
+      "valor": 13.8,
+      "unid": "DZ",
+      "tipoOperation": "1"
+    },
+    {
+      "id": 13,
+      "name": "",
+      "valor": "",
+      "unid": "",
+      "tipoOperation": ""
+    }
+  ],
+  "markUpsList": [
+    {
+      "id": 1,
+      "name": "SEM SUBSTITUIÇÃO TRIBUTÁRIA",
+      "impostos": "13",
+      "comissao": "8.7",
+      "adm": "6",
+      "frete": "8",
+      "financeiro": "4",
+      "promotores": "2",
+      "marketing": "2",
+      "bonificacoes": "2",
+      "lucro": "15",
+      "coeficiente": 2.544529262086514
+    },
+    {
+      "id": 2,
+      "name": "COM SUBSTITUIÇÃO TRIBUTÁRIA",
+      "impostos": "6",
+      "comissao": "8.7",
+      "adm": "6",
+      "frete": "8",
+      "financeiro": "4",
+      "promotores": "2",
+      "marketing": "2",
+      "bonificacoes": "2",
+      "lucro": "15",
+      "coeficiente": 2.1598272138228944
+    },
+    {
+      "id": 3,
+      "name": "TAUSTE",
+      "impostos": "12",
+      "comissao": "2",
+      "adm": "5",
+      "frete": "7",
+      "financeiro": "4",
+      "promotores": "2",
+      "marketing": "2",
+      "bonificacoes": "2",
+      "lucro": "15",
+      "coeficiente": 2.0408163265306123
+    }
+  ],
+  "infoProdutos": [
+    {
+      "id": 1,
+      "cod": 354,
+      "name": "BACIA PLAST. 12 L",
+      "tabela": 11.63,
+      "precoMedio": 11.1
+    },
+    {
+      "id": 2,
+      "cod": 353,
+      "name": "BACIA PLAST. 32 L",
+      "tabela": 26.09,
+      "precoMedio": 25.08
+    },
+    {
+      "id": 3,
+      "cod": 357,
+      "name": "BALDE PLAST. 15 LT",
+      "tabela": 13.06,
+      "precoMedio": 12.3
+    },
+    {
+      "id": 4,
+      "cod": 344,
+      "name": "BALDE PLAST. 8 LT",
+      "tabela": 10.47,
+      "precoMedio": 9.88
+    },
+    {
+      "id": 5,
+      "cod": 372,
+      "name": "BALDE XANDÃO 13LT",
+      "tabela": 22.95,
+      "precoMedio": 21.41
+    },
+    {
+      "id": 6,
+      "cod": 906,
+      "name": "CABIDE PLAST. C3 UNID.",
+      "tabela": 6.4,
+      "precoMedio": 6.08
+    },
+    {
+      "id": 7,
+      "cod": 4893,
+      "name": "CABO DE ALUMINIO C 1,40 MT - FRISADO",
+      "tabela": 22.13,
+      "precoMedio": 22.27
+    },
+    {
+      "id": 8,
+      "cod": 581,
+      "name": "CAPA PRODO 47 X 42CM",
+      "tabela": 11.13,
+      "precoMedio": 11.29
+    },
+    {
+      "id": 9,
+      "cod": 371,
+      "name": "CESTO P ROUPA 30 L",
+      "tabela": 37.25,
+      "precoMedio": 36.01
+    },
+    {
+      "id": 10,
+      "cod": 7,
+      "name": "COADOR PARA CAFÉ 100MM",
+      "tabela": 7.46,
+      "precoMedio": 7.11
+    },
+    {
+      "id": 11,
+      "cod": 65,
+      "name": "CONJ. POTES PLÁST. (1l, 500ML, 250ML) - DONA XEPA",
+      "tabela": 15.51,
+      "precoMedio": 11.51
+    },
+    {
+      "id": 12,
+      "cod": 63,
+      "name": "CONJUNTO MARMITA  (03 PÇS) - DONA XEPA",
+      "tabela": 28.14,
+      "precoMedio": 26.03
+    },
+    {
+      "id": 13,
+      "cod": 630,
+      "name": "DESENTUPIDOR P PIA ",
+      "tabela": 7.71,
+      "precoMedio": 7.44
+    },
+    {
+      "id": 14,
+      "cod": 640,
+      "name": "DESENTUPIDOR SANITARIO",
+      "tabela": 10.31,
+      "precoMedio": 9.89
+    },
+    {
+      "id": 15,
+      "cod": 75,
+      "name": "EMBALAGEM P FREEZER - 2L - DONA XEPA",
+      "tabela": 3.89,
+      "precoMedio": 3.85
+    },
+    {
+      "id": 16,
+      "cod": 74,
+      "name": "EMBALAGEM P FREEZER - 3L - DONA XEPA",
+      "tabela": 4.49,
+      "precoMedio": 4.44
+    },
+    {
+      "id": 17,
+      "cod": 73,
+      "name": "EMBALAGEM P FREEZER - 5L - DONA XEPA",
+      "tabela": 5.19,
+      "precoMedio": 5.16
+    },
+    {
+      "id": 18,
+      "cod": 329,
+      "name": "ESCOVA HORSE",
+      "tabela": 9.35,
+      "precoMedio": 9.34
+    },
+    {
+      "id": 19,
+      "cod": 493,
+      "name": "ESCOVA LAVA COSTAS",
+      "tabela": 10.88,
+      "precoMedio": 10.52
+    },
+    {
+      "id": 20,
+      "cod": 351,
+      "name": "ESCOVA NAGRAXA",
+      "tabela": 7.42,
+      "precoMedio": 7.19
+    },
+    {
+      "id": 21,
+      "cod": 328,
+      "name": "ESCOVA P LUSTRAR CAVALO",
+      "tabela": 9.43,
+      "precoMedio": 9.14
+    },
+    {
+      "id": 22,
+      "cod": 538,
+      "name": "ESCOVA SANITARIA - CPOTE",
+      "tabela": 11.11,
+      "precoMedio": 10.22
+    },
+    {
+      "id": 23,
+      "cod": 537,
+      "name": "ESCOVA SANITARIA - SPOTE",
+      "tabela": 7.2,
+      "precoMedio": 6.77
+    },
+    {
+      "id": 24,
+      "cod": 340,
+      "name": "ESCOVA SCOVY JEANS MADEIRA",
+      "tabela": 3.38,
+      "precoMedio": 3.18
+    },
+    {
+      "id": 25,
+      "cod": 380,
+      "name": "ESCOVA SCOVY JEANS MAIS",
+      "tabela": 6.51,
+      "precoMedio": 6.27
+    },
+    {
+      "id": 26,
+      "cod": 370,
+      "name": "ESCOVA SCOVY JEANS PLAST",
+      "tabela": 4.97,
+      "precoMedio": 4.51
+    },
+    {
+      "id": 27,
+      "cod": 319,
+      "name": "ESCOVA SCOVY LOUÇA",
+      "tabela": 5.39,
+      "precoMedio": 5.07
+    },
+    {
+      "id": 28,
+      "cod": 341,
+      "name": "ESCOVA SCOVY MESA",
+      "tabela": 6.4,
+      "precoMedio": 6.14
+    },
+    {
+      "id": 29,
+      "cod": 320,
+      "name": "ESCOVA SCOVY PANELA",
+      "tabela": 5.11,
+      "precoMedio": 4.92
+    },
+    {
+      "id": 30,
+      "cod": 367,
+      "name": "ESCOVA TIRAPELO",
+      "tabela": 7.13,
+      "precoMedio": 6.73
+    },
+    {
+      "id": 31,
+      "cod": 356,
+      "name": "ESCOVITA DE UNHA ",
+      "tabela": 3.09,
+      "precoMedio": 2.97
+    },
+    {
+      "id": 32,
+      "cod": 363,
+      "name": "ESFREGAO NUPIZO  25 MAD.",
+      "tabela": 12.9,
+      "precoMedio": 12.31
+    },
+    {
+      "id": 33,
+      "cod": 360,
+      "name": "ESFREGAO NUPIZO CERA 25 MAD.",
+      "tabela": 12,
+      "precoMedio": 11.5
+    },
+    {
+      "id": 34,
+      "cod": 364,
+      "name": "ESFREGAO NUPIZO CERA 25 PLAST.",
+      "tabela": 11.63,
+      "precoMedio": 10.54
+    },
+    {
+      "id": 35,
+      "cod": 361,
+      "name": "ESFREGAO NUPIZO ESPECIAL MAD.",
+      "tabela": 21.83,
+      "precoMedio": 20.81
+    },
+    {
+      "id": 36,
+      "cod": 72,
+      "name": "ESFREGAO NUPIZO LIMPA VIDRO",
+      "tabela": 12.71,
+      "precoMedio": 11.99
+    },
+    {
+      "id": 37,
+      "cod": 365,
+      "name": "ESFREGAO NUPIZO PLAST.",
+      "tabela": 12.13,
+      "precoMedio": 10.89
+    },
+    {
+      "id": 38,
+      "cod": 400,
+      "name": "ESPANADOR PENA 30 CM",
+      "tabela": 39.5,
+      "precoMedio": 37.78
+    },
+    {
+      "id": 39,
+      "cod": 520,
+      "name": "ESPANADOR VELUDO N. 2",
+      "tabela": 20.2,
+      "precoMedio": 19.59
+    },
+    {
+      "id": 40,
+      "cod": 525,
+      "name": "ESPANADOR VELUDO N. 3",
+      "tabela": 23.59,
+      "precoMedio": 22.55
+    },
+    {
+      "id": 41,
+      "cod": 61,
+      "name": "ESPÁTULA GOURMET - DONA XEPA",
+      "tabela": 4.99,
+      "precoMedio": 4.24
+    },
+    {
+      "id": 42,
+      "cod": 62,
+      "name": "ESPÁTULA P BOLO - DONA XEPA",
+      "tabela": 4.99,
+      "precoMedio": 4.24
+    },
+    {
+      "id": 43,
+      "cod": 500,
+      "name": "ESPONJA COCO GRANDE",
+      "tabela": 13.89,
+      "precoMedio": 13.15
+    },
+    {
+      "id": 44,
+      "cod": 499,
+      "name": "ESPONJA COCO PEQUENA",
+      "tabela": 10.38,
+      "precoMedio": 9.84
+    },
+    {
+      "id": 45,
+      "cod": 25,
+      "name": "ESPONJA ESFREMAX FRENTE E VERSO",
+      "tabela": 2.66,
+      "precoMedio": 2.44
+    },
+    {
+      "id": 46,
+      "cod": 35,
+      "name": "ESPONJA ESFREMAX PROTEGE UNHAS",
+      "tabela": 1.8,
+      "precoMedio": 1.65
+    },
+    {
+      "id": 47,
+      "cod": 22,
+      "name": "ESPONJA ESFREMAX TEFLON",
+      "tabela": 1.3,
+      "precoMedio": 1.15
+    },
+    {
+      "id": 48,
+      "cod": 34,
+      "name": "ESPONJA ESFREMAX TEFLON C 4 UNID.",
+      "tabela": 4.2,
+      "precoMedio": 3.63
+    },
+    {
+      "id": 49,
+      "cod": 21,
+      "name": "ESPONJA ESFREMAX TRADICIONAL",
+      "tabela": 1.07,
+      "precoMedio": 0.96
+    },
+    {
+      "id": 50,
+      "cod": 32,
+      "name": "ESPONJA ESFREMAX TRADICIONAL C 4 UNID.",
+      "tabela": 3.51,
+      "precoMedio": 3.11
+    },
+    {
+      "id": 51,
+      "cod": 31,
+      "name": "ESPONJA GRANDCAR",
+      "tabela": 4.46,
+      "precoMedio": 3.99
+    },
+    {
+      "id": 52,
+      "cod": 26,
+      "name": "ESPONJA HARMONIC BUCH",
+      "tabela": 7.7,
+      "precoMedio": 7.5
+    },
+    {
+      "id": 53,
+      "cod": 28,
+      "name": "ESPONJA HARMONIC ESPECIAL P BANHO",
+      "tabela": 2.27,
+      "precoMedio": 2.06
+    },
+    {
+      "id": 54,
+      "cod": 29,
+      "name": "ESPONJA HARMONIC KIDS",
+      "tabela": 2.24,
+      "precoMedio": 1.89
+    },
+    {
+      "id": 55,
+      "cod": 27,
+      "name": "ESPONJA HARMONIC NATURE",
+      "tabela": 5.67,
+      "precoMedio": 5.41
+    },
+    {
+      "id": 56,
+      "cod": 30,
+      "name": "ESPONJA HARMONIC SPUMA",
+      "tabela": 2.28,
+      "precoMedio": 2.03
+    },
+    {
+      "id": 57,
+      "cod": 505,
+      "name": "ESPONJA INOXXCEU",
+      "tabela": 2.9,
+      "precoMedio": 2.83
+    },
+    {
+      "id": 58,
+      "cod": 560,
+      "name": "FIO VARAL ACO ENCAPADO 10M",
+      "tabela": 4.91,
+      "precoMedio": 4.73
+    },
+    {
+      "id": 59,
+      "cod": 555,
+      "name": "FIO VARAL NYLON N°5",
+      "tabela": 2.8,
+      "precoMedio": 2.7
+    },
+    {
+      "id": 60,
+      "cod": 346,
+      "name": "FLANELA GRANDE 37 X 57 CM",
+      "tabela": 5.49,
+      "precoMedio": 5.08
+    },
+    {
+      "id": 61,
+      "cod": 345,
+      "name": "FLANELA PEQUENA 27 X 37 CM",
+      "tabela": 3.71,
+      "precoMedio": 3.57
+    },
+    {
+      "id": 62,
+      "cod": 77,
+      "name": "GOTEJADOR PARA PLANTAS",
+      "tabela": 5.49,
+      "precoMedio": 5
+    },
+    {
+      "id": 63,
+      "cod": 352,
+      "name": "LUVA GRANDE",
+      "tabela": 6.78,
+      "precoMedio": 6.45
+    },
+    {
+      "id": 64,
+      "cod": 349,
+      "name": "LUVA MEDIA",
+      "tabela": 6.78,
+      "precoMedio": 6.46
+    },
+    {
+      "id": 65,
+      "cod": 348,
+      "name": "LUVA PEQUENA",
+      "tabela": 6.78,
+      "precoMedio": 6.46
+    },
+    {
+      "id": 66,
+      "cod": 620,
+      "name": "PÁ P LIXO - PEG LIXO CB CURTO",
+      "tabela": 5.44,
+      "precoMedio": 5.22
+    },
+    {
+      "id": 67,
+      "cod": 621,
+      "name": "PÁ P LIXO - PEG LIXO CB. LONGO",
+      "tabela": 11.33,
+      "precoMedio": 10.48
+    },
+    {
+      "id": 68,
+      "cod": 622,
+      "name": "PÁ PLIXO - PEG LIXO METAL CB LONGO",
+      "tabela": 20.58,
+      "precoMedio": 20.07
+    },
+    {
+      "id": 69,
+      "cod": 80,
+      "name": "PANO MICROFIBRA - 30 X 30",
+      "tabela": 4.99,
+      "precoMedio": 4.85
+    },
+    {
+      "id": 70,
+      "cod": 81,
+      "name": "PANO MICROFIBRA - 40 X 60",
+      "tabela": 9.99,
+      "precoMedio": 9.67
+    },
+    {
+      "id": 71,
+      "cod": 580,
+      "name": "PANO PCHAO 39 X 77 CM",
+      "tabela": 6.35,
+      "precoMedio": 6.09
+    },
+    {
+      "id": 72,
+      "cod": 60,
+      "name": "PEGADOR DE PIZZA - DONA XEPA",
+      "tabela": 8.99,
+      "precoMedio": 8.99
+    },
+    {
+      "id": 73,
+      "cod": 4075,
+      "name": "PENEIRA  110 mm  C CABO",
+      "tabela": 5.01,
+      "precoMedio": 4.74
+    },
+    {
+      "id": 74,
+      "cod": 4074,
+      "name": "PENEIRA  70 mm  C CABO",
+      "tabela": 2.86,
+      "precoMedio": 2.7
+    },
+    {
+      "id": 75,
+      "cod": 4076,
+      "name": "PENEIRA 150 mm  C CABO",
+      "tabela": 7.13,
+      "precoMedio": 6.66
+    },
+    {
+      "id": 76,
+      "cod": 4077,
+      "name": "PENEIRA 180 mm  C CABO",
+      "tabela": 8.01,
+      "precoMedio": 7.54
+    },
+    {
+      "id": 77,
+      "cod": 4078,
+      "name": "PENEIRA PLANA 160 mm",
+      "tabela": 6.16,
+      "precoMedio": 5.83
+    },
+    {
+      "id": 78,
+      "cod": 4100,
+      "name": "PENEIRA PLANA 200 mm",
+      "tabela": 12.4,
+      "precoMedio": 11.47
+    },
+    {
+      "id": 79,
+      "cod": 515,
+      "name": "PINCEL NYLON LAVATINA",
+      "tabela": 5.34,
+      "precoMedio": 5.04
+    },
+    {
+      "id": 80,
+      "cod": 66,
+      "name": "POTE PLÁSTICO 1 L - DONA XEPA",
+      "tabela": 6.89,
+      "precoMedio": 6.89
+    },
+    {
+      "id": 81,
+      "cod": 64,
+      "name": "POTE PLÁSTICO 1,5L - DONA XEPA",
+      "tabela": 8.45,
+      "precoMedio": 7.87
+    },
+    {
+      "id": 82,
+      "cod": 68,
+      "name": "POTE PLÁSTICO 250 ML - DONA XEPA",
+      "tabela": 4.85,
+      "precoMedio": 4.7
+    },
+    {
+      "id": 83,
+      "cod": 67,
+      "name": "POTE PLÁSTICO 500 ML - DONA XEPA",
+      "tabela": 5.5,
+      "precoMedio": 5.07
+    },
+    {
+      "id": 84,
+      "cod": 601,
+      "name": "PRENDEDOR MAD. XANDAO",
+      "tabela": 2.44,
+      "precoMedio": 2.35
+    },
+    {
+      "id": 85,
+      "cod": 40,
+      "name": "PRENDEDOR PLAST P EMBALAGENS",
+      "tabela": 5.9,
+      "precoMedio": 5.81
+    },
+    {
+      "id": 86,
+      "cod": 600,
+      "name": "PRENDEDOR PLAST. XANDAO",
+      "tabela": 4.35,
+      "precoMedio": 4.22
+    },
+    {
+      "id": 87,
+      "cod": 585,
+      "name": "RALA PE EMBORRACHADA",
+      "tabela": 7.3,
+      "precoMedio": 7.06
+    },
+    {
+      "id": 88,
+      "cod": 579,
+      "name": "RALA PE MAD.",
+      "tabela": 7.3,
+      "precoMedio": 6.95
+    },
+    {
+      "id": 89,
+      "cod": 583,
+      "name": "RALA-PE PLAST.",
+      "tabela": 7.3,
+      "precoMedio": 7.05
+    },
+    {
+      "id": 90,
+      "cod": 2500,
+      "name": "RODO DUPLO 1M MAD.",
+      "tabela": 40.8,
+      "precoMedio": 38.05
+    },
+    {
+      "id": 91,
+      "cod": 2001,
+      "name": "RODO DUPLO 30 MAD.",
+      "tabela": 13.01,
+      "precoMedio": 11.64
+    },
+    {
+      "id": 92,
+      "cod": 200,
+      "name": "RODO DUPLO 30 MAD. (Pregado)",
+      "tabela": 13.01,
+      "precoMedio": 11.85
+    },
+    {
+      "id": 93,
+      "cod": 2201,
+      "name": "RODO DUPLO 40 MAD.",
+      "tabela": 14.28,
+      "precoMedio": 12.7
+    },
+    {
+      "id": 94,
+      "cod": 220,
+      "name": "RODO DUPLO 40 MAD. (Pregado)",
+      "tabela": 14.28,
+      "precoMedio": 12.95
+    },
+    {
+      "id": 95,
+      "cod": 245,
+      "name": "RODO DUPLO 60 MAD. (Pregado)",
+      "tabela": 23.64,
+      "precoMedio": 21.69
+    },
+    {
+      "id": 96,
+      "cod": 646,
+      "name": "RODO PIA PUXA E SECA PLAST.",
+      "tabela": 5.49,
+      "precoMedio": 5.37
+    },
+    {
+      "id": 97,
+      "cod": 275,
+      "name": "RODO PUXA E SECA 30 PLAST.",
+      "tabela": 14.35,
+      "precoMedio": 12.5
+    },
+    {
+      "id": 98,
+      "cod": 276,
+      "name": "RODO PUXA E SECA 40 PLAST.",
+      "tabela": 15.8,
+      "precoMedio": 13.8
+    },
+    {
+      "id": 99,
+      "cod": 278,
+      "name": "RODO PUXA E SECA 60 PLAST.",
+      "tabela": 27.46,
+      "precoMedio": 24.24
+    },
+    {
+      "id": 100,
+      "cod": 589,
+      "name": "SACO  PLIXO 100L - ROLO XANDÃO ",
+      "tabela": 8.37,
+      "precoMedio": 7.23
+    },
+    {
+      "id": 101,
+      "cod": 586,
+      "name": "SACO  PLIXO 15L - ROLO XANDÃO ",
+      "tabela": 8.06,
+      "precoMedio": 6.94
+    },
+    {
+      "id": 102,
+      "cod": 587,
+      "name": "SACO  PLIXO 30L - ROLO XANDÃO ",
+      "tabela": 8.06,
+      "precoMedio": 6.96
+    },
+    {
+      "id": 103,
+      "cod": 588,
+      "name": "SACO  PLIXO 50L - ROLO XANDÃO ",
+      "tabela": 8.37,
+      "precoMedio": 7.23
+    },
+    {
+      "id": 104,
+      "cod": 347,
+      "name": "SACO ALVEJADO 45 X 65",
+      "tabela": 5.64,
+      "precoMedio": 5.53
+    },
+    {
+      "id": 105,
+      "cod": 514,
+      "name": "SACO PLIXO 100L - HÉRCULES",
+      "tabela": 5.95,
+      "precoMedio": 5.16
+    },
+    {
+      "id": 106,
+      "cod": 513,
+      "name": "SACO PLIXO 15L - HÉRCULES",
+      "tabela": 5.75,
+      "precoMedio": 4.86
+    },
+    {
+      "id": 107,
+      "cod": 512,
+      "name": "SACO PLIXO 30L - HÉRCULES",
+      "tabela": 5.75,
+      "precoMedio": 4.89
+    },
+    {
+      "id": 108,
+      "cod": 511,
+      "name": "SACO PLIXO 50L - HÉRCULES",
+      "tabela": 5.95,
+      "precoMedio": 5.16
+    },
+    {
+      "id": 109,
+      "cod": 76,
+      "name": "SUPORTE MULTIFUNCIONAL XANDÃO",
+      "tabela": 7.69,
+      "precoMedio": 7.43
+    },
+    {
+      "id": 110,
+      "cod": 570,
+      "name": "TABUA DE MAD. PCARNE 23 X 17 CM",
+      "tabela": 15.66,
+      "precoMedio": 14.93
+    },
+    {
+      "id": 111,
+      "cod": 577,
+      "name": "TABUA DE MAD. PCARNE 30 X 23 CM",
+      "tabela": 23.68,
+      "precoMedio": 22.33
+    },
+    {
+      "id": 112,
+      "cod": 582,
+      "name": "ULTRA CLEAN - MULTIUSO - C 2UN",
+      "tabela": 7.72,
+      "precoMedio": 7.51
+    },
+    {
+      "id": 113,
+      "cod": 160,
+      "name": "VAS. BELLINHA PLAST.",
+      "tabela": 11.7,
+      "precoMedio": 9.74
+    },
+    {
+      "id": 114,
+      "cod": 158,
+      "name": "VAS. BRUXINHA MAD.",
+      "tabela": 10.62,
+      "precoMedio": 9.09
+    },
+    {
+      "id": 115,
+      "cod": 159,
+      "name": "VAS. BRUXINHA PLAST.",
+      "tabela": 10.05,
+      "precoMedio": 8.54
+    },
+    {
+      "id": 116,
+      "cod": 150,
+      "name": "VAS. CLASSICA PLAST.",
+      "tabela": 14.89,
+      "precoMedio": 13.23
+    },
+    {
+      "id": 117,
+      "cod": 105,
+      "name": "VAS. DARRUA",
+      "tabela": 14.08,
+      "precoMedio": 13.33
+    },
+    {
+      "id": 118,
+      "cod": 134,
+      "name": "VAS. GRAN LIZA PLAST.",
+      "tabela": 17.39,
+      "precoMedio": 16.72
+    },
+    {
+      "id": 119,
+      "cod": 330,
+      "name": "VAS. LAVA E ENXUGA",
+      "tabela": 17.22,
+      "precoMedio": 16.48
+    },
+    {
+      "id": 120,
+      "cod": 167,
+      "name": "VAS. LIMPA TETO",
+      "tabela": 25.73,
+      "precoMedio": 25.04
+    },
+    {
+      "id": 121,
+      "cod": 117,
+      "name": "VAS. LIZA PLAST. (CRESPA 5)",
+      "tabela": 14.08,
+      "precoMedio": 13.66
+    },
+    {
+      "id": 122,
+      "cod": 104,
+      "name": "VAS. NYLON 5 MAD.",
+      "tabela": 18.65,
+      "precoMedio": 18.68
+    },
+    {
+      "id": 123,
+      "cod": 1001,
+      "name": "VAS. NYLON 6 MAD.",
+      "tabela": 20.45,
+      "precoMedio": 19.49
+    },
+    {
+      "id": 124,
+      "cod": 139,
+      "name": "VAS. NYLON SINTETICO 40 PLAST.",
+      "tabela": 22.19,
+      "precoMedio": 21.44
+    },
+    {
+      "id": 125,
+      "cod": 140,
+      "name": "VAS. NYLON SINTETICO 60 MAD.",
+      "tabela": 27.79,
+      "precoMedio": 27.58
+    },
+    {
+      "id": 126,
+      "cod": 131,
+      "name": "VAS. NYLON SINTETICO MAD.",
+      "tabela": 13.16,
+      "precoMedio": 12.79
+    },
+    {
+      "id": 127,
+      "cod": 155,
+      "name": "VAS. PELO BOLA ",
+      "tabela": 41.03,
+      "precoMedio": 39.03
+    },
+    {
+      "id": 128,
+      "cod": 124,
+      "name": "VAS. PELO PLAST.",
+      "tabela": 31.6,
+      "precoMedio": 30.04
+    },
+    {
+      "id": 129,
+      "cod": 120,
+      "name": "VAS. PIAÇAVA 5",
+      "tabela": 20.1,
+      "precoMedio": 19.37
+    },
+    {
+      "id": 130,
+      "cod": 115,
+      "name": "VAS. PIAÇAVA 6",
+      "tabela": 22.98,
+      "precoMedio": 21.98
+    },
+    {
+      "id": 131,
+      "cod": 122,
+      "name": "VAS. PISCINA 40 PLAST.",
+      "tabela": 18.49,
+      "precoMedio": 17.12
+    },
+    {
+      "id": 132,
+      "cod": 137,
+      "name": "VAS. PISCINA PLAST.",
+      "tabela": 14.22,
+      "precoMedio": 13.54
+    },
+    {
+      "id": 133,
+      "cod": 127,
+      "name": "VAS. PORTO BELLA",
+      "tabela": 12.67,
+      "precoMedio": 12.04
+    },
+    {
+      "id": 134,
+      "cod": 110,
+      "name": "VAS. ROSINHA",
+      "tabela": 14.08,
+      "precoMedio": 13.48
+    },
+    {
+      "id": 135,
+      "cod": 130,
+      "name": "VAS. SF 1000",
+      "tabela": 14.22,
+      "precoMedio": 13.58
+    },
+    {
+      "id": 136,
+      "cod": 166,
+      "name": "VAS. SISAL PARABRISA",
+      "tabela": 56.47,
+      "precoMedio": 51.99
+    },
+    {
+      "id": 137,
+      "cod": 336,
+      "name": "VAS. SO-LAVA ESPECIAL",
+      "tabela": 14.22,
+      "precoMedio": 13.6
+    },
+    {
+      "id": 138,
+      "cod": 132,
+      "name": "VAS. SUPER BELLA",
+      "tabela": 18.31,
+      "precoMedio": 16.05
+    },
+    {
+      "id": 139,
+      "cod": 162,
+      "name": "VASSOURA PARA JARDIM XERETA",
+      "tabela": 15.65,
+      "precoMedio": 15.01
+    },
+    {
+      "id": 140,
+      "cod": 311,
+      "name": "VASSOURAO MEDIO MARROM MAD.",
+      "tabela": 22.91,
+      "precoMedio": 22.91
+    },
+    {
+      "id": 141,
+      "cod": 302,
+      "name": "VASSOURAO NYLON 3 FIL. AMARELO MAD. SCB",
+      "tabela": 14.79,
+      "precoMedio": 14.79
+    },
+    {
+      "id": 142,
+      "cod": 300,
+      "name": "VASSOURAO NYLON 40 MAD. SCB",
+      "tabela": 15.93,
+      "precoMedio": 14.9
+    },
+    {
+      "id": 143,
+      "cod": 301,
+      "name": "VASSOURAO NYLON 40 MARROM MAD. SCB",
+      "tabela": 18.29,
+      "precoMedio": 18.29
+    },
+    {
+      "id": 144,
+      "cod": 303,
+      "name": "VASSOURAO NYLON 40 PLAST.",
+      "tabela": 25.4,
+      "precoMedio": 24.44
+    },
+    {
+      "id": 145,
+      "cod": 304,
+      "name": "VASSOURAO NYLON 40 PLAST. SCB",
+      "tabela": 18.23,
+      "precoMedio": 18.53
+    }
+  ]
+}

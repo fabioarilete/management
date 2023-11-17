@@ -1,25 +1,66 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Modal, ModalTarget } from './components/modal/Modal';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { ColorModeProvider, useMode } from './theme';
+import AppRoutes from './routes/Routes';
+import SideBar from './components/global/Sidebar';
+import Topbar from './components/global/Topbar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+  const [theme, toggleColorMode] = useMode();
+
+  const notify = () => {
+    toast.success('msg', {
+      position: 'top-center',
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    });
+    toast.error('msg', {
+      position: 'top-center',
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Modal target={ModalTarget.ROOT}>
+      <ColorModeProvider value={{ toggleColorMode }}>
+        <ToastContainer
+          position="top-center"
+          autoClose={1500}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <div className="app">
+            <SideBar />
+            <main className="content">
+              <Topbar />
+              <AppRoutes />
+            </main>
+          </div>
+        </ThemeProvider>
+      </ColorModeProvider>
+    </Modal>
   );
 }
 
