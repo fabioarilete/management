@@ -368,25 +368,14 @@
     },
     {
       "id": 9,
-      "name": "BORRACHA EVA P/ RODO - PUXE E SEK 30CM",
-      "preco": 1.07,
-      "frete": 10,
+      "name": "TESTE",
+      "preco": 50,
+      "frete": 5,
       "icms": 18,
       "nf": 100,
       "tipoFornecedor": "0",
-      "total": 0.9844,
-      "unid": "UN"
-    },
-    {
-      "id": 10,
-      "name": "BORRACHA EVA P/ RODO - PUXE E SEK 40CM",
-      "preco": 1.288,
-      "frete": 10,
-      "icms": 18,
-      "nf": 100,
-      "tipoFornecedor": "0",
-      "total": 1.18496,
-      "unid": "UN"
+      "total": 43.5,
+      "unid": "CX"
     }
   ],
   "operationsList": [
@@ -473,19 +462,12 @@
       "valor": 13.8,
       "unid": "DZ",
       "tipoOperation": "1"
-    },
-    {
-      "id": 13,
-      "name": "",
-      "valor": "",
-      "unid": "",
-      "tipoOperation": ""
     }
   ],
   "markUpsList": [
     {
       "id": 1,
-      "name": "SEM SUBSTITUIÇÃO TRIBUTÁRIA",
+      "name": "SEM ST",
       "impostos": "13",
       "comissao": "8.7",
       "adm": "6",
@@ -499,7 +481,7 @@
     },
     {
       "id": 2,
-      "name": "COM SUBSTITUIÇÃO TRIBUTÁRIA",
+      "name": "COM ST",
       "impostos": "6",
       "comissao": "8.7",
       "adm": "6",
@@ -524,6 +506,34 @@
       "bonificacoes": "2",
       "lucro": "15",
       "coeficiente": 2.0408163265306123
+    },
+    {
+      "id": 4,
+      "name": "TESTE",
+      "impostos": "12",
+      "comissao": "5",
+      "adm": "5",
+      "frete": "7",
+      "financeiro": "4",
+      "promotores": "2",
+      "marketing": "2",
+      "bonificacoes": "2",
+      "lucro": "15",
+      "coeficiente": 2.1739130434782608
+    },
+    {
+      "id": 5,
+      "name": "BRADESCO",
+      "impostos": "3",
+      "comissao": "3",
+      "adm": "6",
+      "frete": "8",
+      "financeiro": "4",
+      "promotores": "2",
+      "marketing": "2",
+      "bonificacoes": "2",
+      "lucro": "15",
+      "coeficiente": 1.8181818181818181
     }
   ],
   "infoProdutos": [
