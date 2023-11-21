@@ -17,6 +17,19 @@ body,
   position: relative;
 }
 
+:root {
+  --color1: #1D76F7;
+  --color2: #CB2DC9;
+  --color3: rgb(213, 73, 26);
+  --color4: #14127a;
+  --color5: #e4f2f2;
+  --color6: #1fda29;
+  --color7: #cff0d0;
+  --color8: #919191;
+  --color9: green;
+  --color10: #670303;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
