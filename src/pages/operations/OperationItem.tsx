@@ -8,7 +8,7 @@ import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined
 import { useOperations } from '../../contexts/OperationContext';
 
 type Props = {
-  handleRemove(id: number): void;
+  handleRemove(id: string): void;
   operation: OperationTypes;
 };
 

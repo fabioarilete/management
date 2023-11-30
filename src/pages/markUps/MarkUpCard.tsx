@@ -6,7 +6,7 @@ import { tokens } from '../../theme';
 import { Button } from '../../components/form/button/Style';
 
 type Props = {
-  handleRemove(id: number): void;
+  handleRemove(id: string): void;
   markUp: MarkUpTypes;
 };
 

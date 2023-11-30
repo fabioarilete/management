@@ -31,7 +31,7 @@ const SourceOperationsForm = ({ cost, setCost, handleLastStep, handleSubmit, han
 
   useEffect(() => {
     api
-      .get('operationsList')
+      .get('operations')
       .then(res => {
         setOperations(res.data);
       })
@@ -43,7 +43,7 @@ const SourceOperationsForm = ({ cost, setCost, handleLastStep, handleSubmit, han
       return null;
     }
 
-    const operation = operations.find(item => item.id === Number(selectedOperationId));
+    const operation = operations.find(item => item.id === selectedOperationId);
 
     if (!operation) {
       return null;
@@ -74,7 +74,7 @@ const SourceOperationsForm = ({ cost, setCost, handleLastStep, handleSubmit, han
 
     setCost(state => ({
       ...state,
-      operacoesProduto: [...state.operacoesProduto, data],
+      operationsProduct: [...state.operationsProduct, data],
     }));
     setObs('');
     setQt('');
@@ -85,6 +85,8 @@ const SourceOperationsForm = ({ cost, setCost, handleLastStep, handleSubmit, han
     event.preventDefault();
     handleSubmit({ ...cost });
   }
+
+  console.log(selectedOperation?.tipoOperation);
 
   return (
     <Box

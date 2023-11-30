@@ -28,7 +28,7 @@ const NewMaterial = () => {
   function addMaterial(material: MaterialTypes) {
     const data = { ...material, total: totalMaterial };
     api
-      .post('materialsList', data)
+      .post('materials', data)
       .then(res => {
         setMaterials(state => [...state, { ...data, id: res.data.id }]);
         toast.success('Material cadastrado com sucesso!');

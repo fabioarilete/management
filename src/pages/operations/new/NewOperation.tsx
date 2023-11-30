@@ -22,7 +22,7 @@ const NewOperation = () => {
   function addOperation(operation: OperationTypes) {
     const data = { ...operation };
     api
-      .post('operationsList', data)
+      .post('operations', data)
       .then(res => {
         setOperations(state => [...state, { ...data, id: res.data.id }]);
         toast.success('Operação cadastrada com sucesso!');

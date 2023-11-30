@@ -16,12 +16,12 @@ const inicialCostState: CostTypes = {
   tipoProduto: '',
   sf_st: '',
   id: '' as any,
-  materiaisProduto: [],
-  operacoesProduto: [],
+  materialsProduct: [],
+  operationsProduct: [],
   totalOperations: '' as any,
   totalMaterials: '' as any,
   markUpProduct: '' as any,
-  infoProduct: null,
+  informationsProduct: null,
   totalCost: '' as any,
   unitCost: '' as any,
   priceList: '' as any,
@@ -39,7 +39,7 @@ const Costs = (props: Props) => {
 
   useEffect(() => {
     api
-      .get('products')
+      .get('costs')
       .then(res => {
         setCosts(res.data);
       })
@@ -48,7 +48,7 @@ const Costs = (props: Props) => {
 
   function handleRemove(id: number) {
     api
-      .delete(`products/${id}`)
+      .delete(`costs/${id}`)
       .then(() => {
         setCosts(state => state.filter(cost => cost.id !== id));
       })

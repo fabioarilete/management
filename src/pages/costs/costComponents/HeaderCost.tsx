@@ -25,7 +25,7 @@ const HeaderCost = ({ cost, handleRemove }: Props) => {
         >
           <img style={{ margin: '10px', width: '200px' }} src={Logo} alt="" />
           <Typography fontSize="14px" fontWeight="bold" color="#000">
-            Planilha de cutos de produto
+            Planilha de Custo de Produto
           </Typography>
         </Box>
         <Box

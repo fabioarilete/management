@@ -13,6 +13,7 @@ import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 import CalculateOutlinedIcon from '@mui/icons-material/CalculateOutlined';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import HelpOutlinedIcon from '@mui/icons-material/HelpOutlined';
 
 type ItemTypes = {
   title: string;
@@ -144,6 +145,13 @@ function SideBar() {
               title="Mark Ups"
               to="/markUpsList"
               icon={<CalculateOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Informações"
+              to="/informations"
+              icon={<HelpOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />

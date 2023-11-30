@@ -4,6 +4,7 @@ import { Box, IconButton, Typography, useTheme } from '@mui/material';
 import { tokens } from '../../../theme';
 import formatCurrency from '../../../utils/formatCurrency';
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
+import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 
 type Props = {
   removeMaterial(materialUuid: string): void;
@@ -52,8 +53,15 @@ const ItemMaterialCost = ({ material, removeMaterial }: Props) => {
             </Typography>
           </Box>
           <IconButton
+            // onClick={() => editMaterial(material.uuid)}
+            sx={{ color: 'blue', position: 'absolute', right: '45px' }}
+            aria-label="edit"
+          >
+            <EditOutlinedIcon />
+          </IconButton>
+          <IconButton
             onClick={() => removeMaterial(material.uuid)}
-            sx={{ color: 'red', position: 'absolute', right: '28px' }}
+            sx={{ color: 'red', position: 'absolute', right: '25px' }}
             aria-label="delete"
           >
             <DeleteForeverOutlinedIcon />

@@ -10,7 +10,7 @@ interface OperationContextValue {
   setOperations: Dispatch<SetStateAction<OperationTypes[]>>;
   modalNewOperation: boolean;
   setModalNewOperation: Dispatch<SetStateAction<boolean>>;
-  handleRemove(id: number): void;
+  handleRemove(id: string): void;
 }
 
 const OperationContext = createContext<OperationContextValue>({} as OperationContextValue);

@@ -46,7 +46,7 @@ const HeaderForm = ({ cost, setCost, handleValidation, handleNextStep }: CostFor
       return null;
     }
 
-    const markUp = markUps.find(item => item.id === parseInt(selectedMarkUpId));
+    const markUp = markUps.find(item => item.id === selectedMarkUpId);
 
     if (!markUp) {
       return null;
@@ -59,7 +59,7 @@ const HeaderForm = ({ cost, setCost, handleValidation, handleNextStep }: CostFor
     setCost(state => ({
       ...state,
       markUpProduct: selectedMarkUp,
-      infoProduct: selectedProduct,
+      informationsProduct: selectedProduct,
     }));
     handleNextStep();
   }

@@ -31,7 +31,7 @@ const NewMarkUp = () => {
   function addMarkUp(markUp: MarkUpTypes) {
     const data = { ...markUp, coeficiente: coef };
     api
-      .post('markUpsList', data)
+      .post('markUps', data)
       .then(res => {
         setMarkUps(state => [...state, { ...data, id: res.data.id }]);
         toast.success('Mark Up cadastrado com sucesso!');

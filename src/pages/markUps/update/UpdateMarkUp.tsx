@@ -28,7 +28,7 @@ const UpDateMarkUp = () => {
 
   function handleSubmit(markUp: MarkUpTypes) {
     api
-      .put(`markUpsList/${markUp.id}`, markUp)
+      .put(`markUps/${markUp.id}`, markUp)
       .then(res => {
         setMarkUps(state =>
           state.map(item => {

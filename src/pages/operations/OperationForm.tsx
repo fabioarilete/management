@@ -8,6 +8,7 @@ import { tokens } from '../../theme';
 import { Button } from '../../components/form/button/Style';
 import { OperationTypes } from './types/OperationTypes';
 import { useOperations } from '../../contexts/OperationContext';
+import { RadioButton } from '../../components/form/radioButton/RadioButton';
 
 interface FormOperationsProps {
   operation: OperationTypes;
@@ -80,6 +81,38 @@ export const OperationForm = ({ operation, setOperation, handleSubmit }: FormOpe
             })
           }
         />
+        <Typography color={colors.grey[100]}> Tipo de Operação</Typography>
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          borderRadius="5px"
+          border={`1px solid ${colors.grey[100]}`}
+          bgcolor={colors.blueAccent[700]}
+        >
+          <RadioButton
+            name="tipoOperation"
+            label="Comum"
+            value={1}
+            onChange={event =>
+              setOperation({
+                ...operation,
+                tipoOperation: event.target.value,
+              })
+            }
+          />
+          <RadioButton
+            name="tipoOperation"
+            label="Injeção"
+            value={0}
+            onChange={event =>
+              setOperation({
+                ...operation,
+                tipoOperation: event.target.value,
+              })
+            }
+          />
+        </Box>
 
         <Box display="flex" justifyContent="space-around" margin="20px 0">
           <Button type="submit" color={colors.greenAccent[600]} wSize="150px" hSize="35px">

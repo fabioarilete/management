@@ -12,7 +12,7 @@ import NewMaterial from './new/NewMaterial';
 import UpdateMaterial from './update/UpdateMaterial';
 
 const inicialState: MaterialTypes = {
-  id: '' as any,
+  id: '',
   name: '',
   preco: '' as any,
   frete: '' as any,
@@ -33,7 +33,7 @@ const Materials = () => {
 
   useEffect(() => {
     api
-      .get('materialsList')
+      .get('materials')
       .then(res => {
         setMaterials(res.data);
       })
@@ -44,9 +44,9 @@ const Materials = () => {
     setModalNewMaterial(true);
   }
 
-  function handleRemove(id: number) {
+  function handleRemove(id: string) {
     api
-      .delete(`materialsList/${id}`)
+      .delete(`materials/${id}`)
       .then(() => {
         setMaterials(state => state.filter(material => material.id !== id));
         toast.success('Material removido com sucesso!');

@@ -29,7 +29,7 @@ const SourceMaterialsForm = ({ cost, setCost, handleNextStep, handleLastStep, ha
 
   useEffect(() => {
     api
-      .get('materialsList')
+      .get('materials')
       .then(res => {
         setMaterials(res.data);
       })
@@ -41,7 +41,7 @@ const SourceMaterialsForm = ({ cost, setCost, handleNextStep, handleLastStep, ha
       return null;
     }
 
-    const material = materials.find(item => item.id === Number(selectedMaterialId));
+    const material = materials.find(item => item.id === selectedMaterialId);
 
     if (!material) {
       return null;
@@ -68,7 +68,7 @@ const SourceMaterialsForm = ({ cost, setCost, handleNextStep, handleLastStep, ha
 
     setCost(state => ({
       ...state,
-      materiaisProduto: [...state.materiaisProduto, data],
+      materialsProduct: [...state.materialsProduct, data],
     }));
     setObs('');
     setQt('');

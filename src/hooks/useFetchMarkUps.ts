@@ -9,7 +9,7 @@ export function useFetchMarkUps() {
 
   useEffect(() => {
     api
-      .get('markUpsList')
+      .get('markUps')
       .then(res => {
         setMarkUps(res.data);
       })

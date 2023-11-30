@@ -9,7 +9,7 @@ export function useFetchInfo() {
 
   useEffect(() => {
     api
-      .get('infoProdutos')
+      .get('informations')
       .then(res => {
         setInformations(res.data);
       })

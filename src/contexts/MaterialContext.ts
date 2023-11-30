@@ -10,7 +10,7 @@ interface MaterialContextValue {
   setMaterials: Dispatch<SetStateAction<MaterialTypes[]>>;
   modalNewMaterial: boolean;
   setModalNewMaterial: Dispatch<SetStateAction<boolean>>;
-  handleRemove(id: number): void;
+  handleRemove(id: string): void;
 }
 
 const MaterialContext = createContext<MaterialContextValue>({} as MaterialContextValue);

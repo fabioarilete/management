@@ -8,7 +8,7 @@ import { Box } from '@mui/material';
 import { MaterialTypes } from '../types/MaterialTypes';
 
 const initialState: MaterialTypes = {
-  id: '' as any,
+  id: '',
   name: '',
   preco: '' as any,
   frete: '' as any,
@@ -27,7 +27,7 @@ const UpdateMaterial = () => {
   function handleSubmit(material: MaterialTypes) {
     const data = { ...material, total: totalMaterial };
     api
-      .put(`materialsList/${material.id}`, data)
+      .put(`materials/${material.id}`, data)
       .then(res => {
         setMaterials(state =>
           state.map(item => {

@@ -15,7 +15,7 @@ const MaterialsCost = ({ cost, removeMaterial }: Props) => {
   const colors = tokens(theme.palette.mode);
   return (
     <Box display="flex" flexDirection="column" width="100%">
-      <Box display="flex" m="5px 30px 15px 10px" flexDirection="column">
+      <Box display="flex" m="5px 45px 15px 10px" flexDirection="column">
         <Box width="100%" display="flex" bgcolor="#1E5245" color={colors.grey[100]} textAlign="center">
           <Box width="35%">
             <Typography fontSize="16px" fontWeight="bold" color="#fff">
@@ -48,8 +48,13 @@ const MaterialsCost = ({ cost, removeMaterial }: Props) => {
             </Typography>
           </Box>
         </Box>
-        {cost.materiaisProduto.map(material => (
-          <ItemMaterialCost material={material} removeMaterial={removeMaterial} key={material.id} />
+        {cost.materialsProduct.map(material => (
+          <ItemMaterialCost
+            material={material}
+            // editMaterial={editMaterial}
+            removeMaterial={removeMaterial}
+            key={material.id}
+          />
         ))}
         <Box display="flex" width="100%">
           <Box width="80%" pr="5px" textAlign="end">

@@ -28,12 +28,12 @@ export interface CostTypes {
   tipoProduto: string;
   sf_st: string;
   id: number;
-  materiaisProduto: CostMaterial[];
-  operacoesProduto: CostOperation[];
+  materialsProduct: CostMaterial[];
+  operationsProduct: CostOperation[];
   totalOperations: number;
   totalMaterials: number;
   markUpProduct: MarkUpTypes | null;
-  infoProduct: InfoTypes | null;
+  informationsProduct: InfoTypes | null;
   totalCost: number;
   unitCost: number;
   priceList: number;

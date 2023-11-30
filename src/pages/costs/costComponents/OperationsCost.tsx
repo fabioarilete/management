@@ -44,7 +44,7 @@ const OperationsCost = ({ cost, removeOperation }: Props) => {
             </Typography>
           </Box>
         </Box>
-        {cost.operacoesProduto.map(operation => (
+        {cost.operationsProduct.map(operation => (
           <ItemOperationCost operation={operation} removeOperation={removeOperation} key={operation.id} />
         ))}
         <Box display="flex" width="100%">

@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { CostTypes } from '../types/CostTypes';
 import { CostProvider, useCosts } from '../../../contexts/CostContext';
-import { Box, useTheme } from '@mui/material';
-import { tokens } from '../../../theme';
+import { Box } from '@mui/material';
 import api from '../../../api/api';
 import Header from '../../../components/Header';
 import HeaderForm from '../costForms/HeaderForm';
@@ -12,6 +11,8 @@ import SourceOperationsForm from '../costForms/SourceOperationsForm';
 import HeaderCost from '../costComponents/HeaderCost';
 import MaterialsCost from '../costComponents/MaterialsCost';
 import OperationsCost from '../costComponents/OperationsCost';
+import ResultsCost from '../costComponents/ResultsCost';
+import MarkUpCost from '../costComponents/MarkUpCost';
 
 const inicialCostState: CostTypes = {
   cod: '',
@@ -22,12 +23,12 @@ const inicialCostState: CostTypes = {
   tipoProduto: '',
   sf_st: '',
   id: '' as any,
-  materiaisProduto: [],
-  operacoesProduto: [],
+  materialsProduct: [],
+  operationsProduct: [],
   totalOperations: '' as any,
   totalMaterials: '' as any,
   markUpProduct: null,
-  infoProduct: null,
+  informationsProduct: null,
   totalCost: '' as any,
   unitCost: '' as any,
   priceList: '' as any,
@@ -35,8 +36,6 @@ const inicialCostState: CostTypes = {
 };
 
 const NewCost = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
   const [cost, setCost] = useState<CostTypes>(inicialCostState);
   const { costs, setCosts } = useCosts();
   const [step, setStep] = useState(1);
@@ -44,10 +43,10 @@ const NewCost = () => {
   useEffect(() => {
     let total = 0;
 
-    if (!cost.operacoesProduto.length) {
+    if (!cost.operationsProduct.length) {
       total = 0;
     }
-    total = cost.operacoesProduto.reduce((next, item) => {
+    total = cost.operationsProduct.reduce((next, item) => {
       const subTotal = item.totalItemOperation;
       return next + subTotal;
     }, 0);
@@ -56,15 +55,15 @@ const NewCost = () => {
       ...state,
       totalOperations: total,
     }));
-  }, [cost.operacoesProduto]);
+  }, [cost.operationsProduct]);
 
   useEffect(() => {
     let total = 0;
 
-    if (!cost.materiaisProduto.length) {
+    if (!cost.materialsProduct.length) {
       total = 0;
     }
-    total = cost.materiaisProduto.reduce((next, item) => {
+    total = cost.materialsProduct.reduce((next, item) => {
       const subTotal = item.totalItemMaterial;
       return next + subTotal;
     }, 0);
@@ -73,7 +72,7 @@ const NewCost = () => {
       ...state,
       totalMaterials: total,
     }));
-  }, [cost.materiaisProduto]);
+  }, [cost.materialsProduct]);
 
   useEffect(() => {
     let total = 0;
@@ -116,29 +115,53 @@ const NewCost = () => {
   }
 
   function removeOperation(operationUuid: string) {
-    const operacoesProduto = cost.operacoesProduto.filter(item => item.uuid !== operationUuid);
+    const operationsProduct = cost.operationsProduct.filter(item => item.uuid !== operationUuid);
     setCost(state => ({
       ...state,
-      operacoesProduto,
+      operationsProduct,
     }));
   }
 
   function removeMaterial(materialUuid: string) {
-    const materiaisProduto = cost.materiaisProduto.filter(item => item.uuid !== materialUuid);
+    const materialsProduct = cost.materialsProduct.filter(item => item.uuid !== materialUuid);
     setCost(state => ({
       ...state,
-      materiaisProduto,
+      materialsProduct,
     }));
   }
 
   function handleRemove() {}
 
   function addCost(cost: CostTypes) {
-    const data = { ...cost };
+    const data = {
+      ...cost,
+      materialsProduct: cost.materialsProduct.map(material => ({
+        id: material.id,
+        qt: material.qt,
+        obs: material.obs,
+        totalItemmaterial: material.totalItemMaterial,
+      })),
+      operationsProduct: cost.operationsProduct.map(operation => ({
+        id: operation.id,
+        obs: operation.obs,
+        qt: operation.qt,
+        cav: operation.cav,
+        ciclo: operation.ciclo,
+        totalItemOperation: operation.totalItemOperation,
+      })),
+      informationsProduct: {
+        cod: cost.informationsProduct?.cod,
+        tabela: cost.informationsProduct?.tabela,
+        precoMedio: cost.informationsProduct?.precoMedio,
+      },
+      markUpProduct: {
+        id: cost.markUpProduct?.id,
+      },
+    };
     api
-      .post('products', data)
+      .post('costs', data)
       .then(res => {
-        setCosts(state => [...state, { ...data, id: res.data.id }]);
+        setCosts(state => [...state, { ...cost, id: res.data.id }]);
       })
       .catch(err => console.log(err));
   }
@@ -204,6 +227,10 @@ const NewCost = () => {
             </Box>
             <Box width="100%" display="flex">
               <OperationsCost cost={cost} removeOperation={removeOperation} />
+            </Box>
+            <Box width="100%" display="flex">
+              <MarkUpCost cost={cost} />
+              <ResultsCost cost={cost} />
             </Box>
           </Box>
         </Box>

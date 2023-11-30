@@ -21,7 +21,7 @@ const UpdateOperation = () => {
 
   function handleSubmit(operation: OperationTypes) {
     api
-      .put(`operationsList/${operation.id}`, operation)
+      .put(`operations/${operation.id}`, operation)
       .then(res => {
         setOperations(state =>
           state.map(item => {

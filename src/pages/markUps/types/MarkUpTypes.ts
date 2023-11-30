@@ -1,5 +1,5 @@
 export interface MarkUpTypes {
-  id: number;
+  id: string;
   name: string;
   impostos: string;
   comissao: string;

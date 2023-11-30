@@ -10,7 +10,7 @@ interface MarkUpContextValue {
   setMarkUps: Dispatch<SetStateAction<MarkUpTypes[]>>;
   modalNewMarkUp: boolean;
   setModalNewMarkUp: Dispatch<SetStateAction<boolean>>;
-  handleRemove(id: number): void;
+  handleRemove(id: string): void;
 }
 
 const MarkUpContext = createContext<MarkUpContextValue>({} as MarkUpContextValue);

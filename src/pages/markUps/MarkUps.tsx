@@ -35,7 +35,7 @@ const MarkUps = () => {
 
   useEffect(() => {
     api
-      .get('markUpsList')
+      .get('markUps')
       .then(res => {
         setMarkUps(res.data);
       })
@@ -46,9 +46,9 @@ const MarkUps = () => {
     setModalNewMarkUp(true);
   }
 
-  function handleRemove(id: number) {
+  function handleRemove(id: string) {
     api
-      .delete(`markUpsList/${id}`)
+      .delete(`markUps/${id}`)
       .then(() => {
         setMarkUps(state => state.filter(markup => markup.id !== id));
         toast.success('Mark Up removido com sucesso!');

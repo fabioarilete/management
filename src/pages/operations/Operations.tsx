@@ -12,7 +12,7 @@ import UpdateOperation from './update/UpdateOperation';
 import { OperationProvider } from '../../contexts/OperationContext';
 
 const inicialState: OperationTypes = {
-  id: '' as any,
+  id: '',
   name: '',
   valor: '' as any,
   unid: '',
@@ -29,15 +29,15 @@ const Operations = () => {
 
   useEffect(() => {
     api
-      .get('operationsList')
+      .get('operations')
       .then(res => {
         setOperations(res.data);
       })
       .catch(err => console.log(err));
   }, []);
-  function handleRemove(id: number) {
+  function handleRemove(id: string) {
     api
-      .delete(`operationsList/${id}`)
+      .delete(`operations/${id}`)
       .then(() => {
         setOperations(state => state.filter(operation => operation.id !== id));
         toast.success('Operação removida com sucesso!');

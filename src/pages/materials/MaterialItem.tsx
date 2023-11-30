@@ -8,7 +8,7 @@ import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
 
 type Props = {
-  handleRemove(id: number): void;
+  handleRemove(id: string): void;
   material: MaterialTypes;
 };
 

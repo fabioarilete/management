@@ -1,5 +1,5 @@
 export interface OperationTypes {
-  id: number;
+  id: string;
   name: string;
   valor: number;
   unid: string;

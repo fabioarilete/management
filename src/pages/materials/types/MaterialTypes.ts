@@ -1,5 +1,5 @@
 export interface MaterialTypes {
-  id: number;
+  id: string;
   name: string;
   preco: number;
   frete: number;

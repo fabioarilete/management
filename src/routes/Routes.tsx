@@ -4,6 +4,7 @@ import MarkUps from '../pages/markUps/MarkUps';
 import Operations from '../pages/operations/Operations';
 import Costs from '../pages/costs/Costs';
 import NewCost from '../pages/costs/new/NewCost';
+import Informations from '../pages/informations/Informations';
 // import Home from '../pages/Home/Home';
 
 const AppRoutes = () => {
@@ -15,6 +16,7 @@ const AppRoutes = () => {
       <Route path="/materialsList" element={<Materials />} />
       <Route path="/operationsList" element={<Operations />} />
       <Route path="/markUpsList" element={<MarkUps />} />
+      <Route path="/informations" element={<Informations />} />
     </Routes>
   );
 };
