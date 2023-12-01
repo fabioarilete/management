@@ -130,10 +130,6 @@ const NewCost = () => {
     }));
   }
 
-  function editMaterial() {
-    
-  }
-
   function handleRemove() {}
 
   function addCost(cost: CostTypes) {

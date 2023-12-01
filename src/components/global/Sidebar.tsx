@@ -122,28 +122,28 @@ function SideBar() {
             />
             <Item
               title="Custos"
-              to="/products"
+              to="/costs"
               icon={<DatasetOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Materiais"
-              to="/materialsList"
+              to="/materials"
               icon={<CategoryOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Operações"
-              to="/operationsList"
+              to="/operations"
               icon={<EngineeringOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Mark Ups"
-              to="/markUpsList"
+              to="/markUps"
               icon={<CalculateOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
