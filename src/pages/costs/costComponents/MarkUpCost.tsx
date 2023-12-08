@@ -7,7 +7,6 @@ type Props = {
 };
 
 const MarkUpCost = ({ cost }: Props) => {
-  console.log(cost.markUpProduct);
   return (
     <Box display="flex" flex="0.20" m="10px" flexDirection="column">
       <Box

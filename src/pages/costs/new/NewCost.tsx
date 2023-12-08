@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { CostTypes } from '../types/CostTypes';
-import { CostProvider, useCosts } from '../../../contexts/CostContext';
 import { Box } from '@mui/material';
 import api from '../../../api/api';
 import Header from '../../../components/Header';
@@ -13,6 +12,7 @@ import MaterialsCost from '../costComponents/MaterialsCost';
 import OperationsCost from '../costComponents/OperationsCost';
 import ResultsCost from '../costComponents/ResultsCost';
 import MarkUpCost from '../costComponents/MarkUpCost';
+import { CostProvider, useCosts } from '../../../contexts/CostContext';
 
 const inicialCostState: CostTypes = {
   cod: '',
@@ -139,7 +139,7 @@ const NewCost = () => {
         id: material.id,
         qt: material.qt,
         obs: material.obs,
-        totalItemmaterial: material.totalItemMaterial,
+        totalItemMaterial: material.totalItemMaterial,
       })),
       operationsProduct: cost.operationsProduct.map(operation => ({
         id: operation.id,

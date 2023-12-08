@@ -5,6 +5,7 @@ import Operations from '../pages/operations/Operations';
 import Costs from '../pages/costs/Costs';
 import NewCost from '../pages/costs/new/NewCost';
 import Informations from '../pages/informations/Informations';
+import UpdateCost from '../pages/costs/update/UpdateCost';
 // import Home from '../pages/Home/Home';
 
 const AppRoutes = () => {
@@ -13,6 +14,7 @@ const AppRoutes = () => {
       {/* <Route path="/" element={<Home />} /> */}
       <Route path="/costs" element={<Costs />} />
       <Route path="/newCost" element={<NewCost />} />
+      <Route path="/costs/:id" element={<UpdateCost />} />
       <Route path="/materials" element={<Materials />} />
       <Route path="/operations" element={<Operations />} />
       <Route path="/markUps" element={<MarkUps />} />

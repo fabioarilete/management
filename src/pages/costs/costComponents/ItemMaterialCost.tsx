@@ -1,64 +1,97 @@
 import React from 'react';
 import { CostMaterial } from '../types/CostTypes';
-import { Box, IconButton, Typography, useTheme } from '@mui/material';
+import { Box, IconButton, useTheme } from '@mui/material';
 import { tokens } from '../../../theme';
 import formatCurrency from '../../../utils/formatCurrency';
+import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
+import Item from './Item';
 
 type Props = {
   removeMaterial(materialUuid: string): void;
   material: CostMaterial;
+  hasEdition?: boolean;
 };
 
-const ItemMaterialCost = ({ material, removeMaterial }: Props) => {
+const ItemMaterialCost = ({ material, removeMaterial, hasEdition = false }: Props) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
   return (
     <Box display="flex" flexDirection="column" width="100%">
       <Box display="flex" flexDirection="column">
-        <Box width="100%" display="flex" alignItems="center" borderBottom={`0.5px solid ${colors.grey[300]}`}>
-          <Box width="35%" borderLeft={`8px solid #1E5245`}>
-            <Typography pl="5px" textAlign="start" fontSize="16px" fontWeight="600" color="var(--color4)">
-              {material.name}
-            </Typography>
-          </Box>
-          <Box width="17%" borderLeft={`0.5px solid ${colors.grey[300]}`}>
-            <Typography fontSize="12px" textAlign="center" fontWeight="600" color="var(--color4)">
-              {material.obs}
-            </Typography>
-          </Box>
-          <Box width="10%" borderLeft={`0.5px solid ${colors.grey[300]}`}>
-            <Typography fontSize="16px" textAlign="center" fontWeight="600" color="var(--color4)">
-              {material.qt}
-            </Typography>
-          </Box>
-          <Box width="6%" borderLeft={`0.5px solid ${colors.grey[300]}`}>
-            <Typography fontSize="16px" textAlign="center" fontWeight="600" color="var(--color4)">
-              {material.unid}
-            </Typography>
-          </Box>
-          <Box width="16%" borderLeft={`0.5px solid ${colors.grey[300]}`}>
-            <Typography pr="5px" textAlign="end" fontSize="16px" fontWeight="600" color="var(--color4)">
-              {formatCurrency(material.total, 'BRL')}
-            </Typography>
-          </Box>
-          <Box
-            width="16%"
+        <Box
+          width="100%"
+          height="35px"
+          display="flex"
+          alignItems="flex-end"
+          textAlign="center"
+          border={`0.5px solid ${colors.grey[300]}`}
+        >
+          <Item
+            width="33%"
+            color="var(--color4)"
+            fontSize="18px"
+            fontWeight="600"
+            textAlign="start"
+            borderRight={`0.5px solid ${colors.grey[300]}`}
+            text={material.name}
+          />
+          <Item
+            width="17%"
+            color="var(--color4)"
+            fontSize="12px"
+            fontWeight="600"
+            textAlign="center"
+            text={material.obs}
+          />
+          <Item
+            width="10%"
+            color="var(--color4)"
+            fontSize="18px"
+            fontWeight="600"
+            textAlign="center"
+            borderLeft={`0.5px solid ${colors.grey[300]}`}
+            text={material.qt}
+          />
+          <Item
+            width="6%"
+            color="var(--color4)"
+            fontSize="18px"
+            fontWeight="600"
+            textAlign="center"
+            borderLeft={`0.5px solid ${colors.grey[300]}`}
+            text={material.unid}
+          />
+          <Item
+            width="13%"
+            color="var(--color4)"
+            fontSize="18px"
+            fontWeight="600"
+            textAlign="end"
+            borderLeft={`0.5px solid ${colors.grey[300]}`}
+            text={formatCurrency(material.total, 'BRL')}
+          />
+          <Item
+            width="13%"
+            color="var(--color4)"
+            fontSize="18px"
+            fontWeight="600"
+            textAlign="end"
             borderLeft={`0.5px solid ${colors.grey[300]}`}
             borderRight={`0.5px solid ${colors.grey[300]}`}
-          >
-            <Typography pr="5px" textAlign="end" fontSize="16px" fontWeight="600" color="var(--color4)">
-              {formatCurrency(material.totalItemMaterial, 'BRL')}
-            </Typography>
+            text={formatCurrency(material.totalItemMaterial, 'BRL')}
+          />
+          <Box width="8%" display="flex" justifyContent="space-around">
+            {hasEdition && (
+              <IconButton sx={{ color: 'var(--color4)' }} aria-label="edit">
+                <EditOutlinedIcon />
+              </IconButton>
+            )}
+            <IconButton onClick={() => removeMaterial(material.uuid)} sx={{ color: 'red' }} aria-label="delete">
+              <DeleteForeverOutlinedIcon />
+            </IconButton>
           </Box>
-
-          <IconButton
-            onClick={() => removeMaterial(material.uuid)}
-            sx={{ color: 'red', position: 'absolute', right: '25px' }}
-            aria-label="delete"
-          >
-            <DeleteForeverOutlinedIcon />
-          </IconButton>
         </Box>
       </Box>
     </Box>

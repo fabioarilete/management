@@ -27,7 +27,7 @@ export interface CostTypes {
   st: string;
   tipoProduto: string;
   sf_st: string;
-  id: number;
+  id: string;
   materialsProduct: CostMaterial[];
   operationsProduct: CostOperation[];
   totalOperations: number;

@@ -86,8 +86,6 @@ const SourceOperationsForm = ({ cost, setCost, handleLastStep, handleSubmit, han
     handleSubmit({ ...cost });
   }
 
-  console.log(selectedOperation?.tipoOperation);
-
   return (
     <Box
       overflow="auto"

@@ -4,9 +4,10 @@ import { Box, Button, useTheme } from '@mui/material';
 import { tokens } from '../../theme';
 import { CostTypes } from './types/CostTypes';
 import Header from '../../components/Header';
-import CostCard from './CostCard';
 import { Link } from 'react-router-dom';
-import { CostsProvider } from '../../contexts/CostsContext';
+import CostHeadTitle from './CostHeadTitle';
+import CostItem from './CostItem';
+import { CostProvider } from '../../contexts/CostContext';
 
 const inicialCostState: CostTypes = {
   cod: '',
@@ -16,7 +17,7 @@ const inicialCostState: CostTypes = {
   st: '',
   tipoProduto: '',
   sf_st: '',
-  id: '' as any,
+  id: '',
   materialsProduct: [],
   operationsProduct: [],
   totalOperations: '' as any,
@@ -36,8 +37,6 @@ const Costs = (props: Props) => {
   const colors = tokens(theme.palette.mode);
   const [cost, setCost] = useState<CostTypes>(inicialCostState);
   const [costs, setCosts] = useState<any[]>([]);
-  const [selectedCost, setSelectedCost] = useState<CostTypes | null>(null);
-  const [modalUpdateCost, setModalUpdateCost] = useState(false);
 
   useEffect(() => {
     api
@@ -48,7 +47,7 @@ const Costs = (props: Props) => {
       .catch(err => console.log(err));
   }, []);
 
-  function handleRemove(id: number) {
+  function handleRemove(id: string) {
     api
       .delete(`costs/${id}`)
       .then(() => {
@@ -57,17 +56,13 @@ const Costs = (props: Props) => {
       .catch(err => console.log(err));
   }
   return (
-    <CostsProvider
+    <CostProvider
       value={{
         cost,
         setCost,
         costs,
         setCosts,
         handleRemove,
-        selectedCost,
-        setSelectedCost,
-        modalUpdateCost,
-        setModalUpdateCost,
       }}
     >
       <Box m="20px">
@@ -79,25 +74,20 @@ const Costs = (props: Props) => {
               sx={{ bgcolor: `${colors.greenAccent[500]}`, color: `${colors.grey[100]}`, height: '100%' }}
               variant="text"
             >
-              Cadastrar Novo Material
+              Cadastrar Novo Custo
             </Button>
           </Link>
         </Box>
-        <Box
-          display="flex"
-          height="67vh"
-          border={`1px solid ${colors.greenAccent[400]}`}
-          borderRadius="5px"
-          overflow="auto"
-          justifyContent="space-around"
-          flexWrap="wrap"
-        >
+        <Box>
+          <CostHeadTitle />
+        </Box>
+        <Box height="67vh" border={`1px solid ${colors.greenAccent[400]}`} borderRadius="5px" overflow="auto">
           {costs.map(cost => (
-            <CostCard cost={cost} handleRemove={handleRemove} key={cost.id} />
+            <CostItem cost={cost} handleRemove={handleRemove} key={cost.id} />
           ))}
         </Box>
       </Box>
-    </CostsProvider>
+    </CostProvider>
   );
 };
 
